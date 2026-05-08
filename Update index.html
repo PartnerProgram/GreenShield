@@ -9830,33 +9830,6 @@
   .gs-metric-card h5 { font-size: 11.5px; font-weight: 700; color: #00544E; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 8px; }
   .gs-metric-card ul { margin: 0 0 0 18px; padding: 0; }
   .gs-metric-card li { font-size: 13px; line-height: 1.55; color: #2E3A33; margin-bottom: 4px; }
-  .gs-arch-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; margin-top: 12px; }
-  .gs-arch-panel { border: 1px solid #E5EAE7; border-radius: 4px; padding: 16px 16px 14px; background: #FAFBFA; display: flex; flex-direction: column; position: relative; min-height: 320px; }
-  .gs-arch-panel.gs-arch-e { background: #F4F8F6; border-color: #00544E; }
-  .gs-arch-h { font-size: 13px; font-weight: 700; color: #0F1A14; letter-spacing: -0.005em; margin-bottom: 10px; }
-  .gs-arch-tag { position: absolute; top: 14px; right: 14px; font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; }
-  .gs-arch-tag-warn { background: #F3EBD9; color: #735112; }
-  .gs-arch-tag-rec { background: #00544E; color: #fff; }
-  .gs-arch-app { background: #fff; border: 1px solid #E5EAE7; border-radius: 4px; padding: 8px 10px; text-align: center; font-size: 12px; font-weight: 600; color: #0F1A14; margin-bottom: 4px; }
-  .gs-arch-app span { display: block; font-weight: 400; color: #4A5651; font-size: 10.5px; margin-top: 2px; }
-  .gs-arch-svg { width: 100%; height: 60px; display: block; }
-  .gs-arch-svg-short { height: 30px; }
-  .gs-arch-layer { background: #00544E; color: #fff; padding: 10px 12px; border-radius: 3px; text-align: center; margin: 6px 0 0; }
-  .gs-arch-layer strong { display: block; font-size: 13px; font-weight: 700; letter-spacing: -0.005em; }
-  .gs-arch-layer small { display: block; font-size: 10px; color: rgba(255,255,255,0.78); margin-top: 2px; letter-spacing: 0.01em; }
-  .gs-arch-tools { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin: 6px 0 0; }
-  .gs-arch-tool { font-size: 9.5px; font-weight: 600; text-align: center; padding: 6px 2px; border-radius: 3px; color: #0F1A14; border: 1px solid #E5EAE7; background: #fff; }
-  .gs-arch-tool.gs-tool-1 { background: #FFF4E8; border-color: #F0D6B0; }
-  .gs-arch-tool.gs-tool-2 { background: #EAF2FA; border-color: #C0D5E8; }
-  .gs-arch-tool.gs-tool-3 { background: #F1EAF5; border-color: #D5BDE0; }
-  .gs-arch-tool.gs-tool-4 { background: #E8F1ED; border-color: #BDD8C8; }
-  .gs-arch-plats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 3px; margin-top: 4px; }
-  .gs-arch-plats span { font-size: 9.5px; font-weight: 700; color: #0F1A14; background: #fff; border: 1px solid #DDE3DF; border-radius: 3px; padding: 6px 2px; text-align: center; letter-spacing: 0.02em; }
-  .gs-arch-plats span.gs-arch-dim { background: #F2F2F0; color: #9AA29D; border-color: #E5EAE7; border-style: dashed; }
-  .gs-arch-plats span small { display: block; font-size: 8px; font-weight: 600; color: #8A2E16; letter-spacing: 0; margin-top: 2px; }
-  .gs-arch-cap { font-size: 11.5px; line-height: 1.5; color: #4A5651; margin-top: 10px; padding-top: 10px; border-top: 1px dashed #E5EAE7; }
-  .gs-arch-foot { font-size: 12.5px; color: #2E3A33; margin-top: 14px; padding: 12px 14px; background: #F4F8F6; border-left: 3px solid #00544E; border-radius: 0 4px 4px 0; line-height: 1.55; }
-  @media (max-width: 1100px) { .gs-arch-grid { grid-template-columns: 1fr; } }
   @media (max-width: 900px) {
     .gs-risk-row, .gs-exec-grid, .gs-metric-grid, .gs-phase { grid-template-columns: 1fr; }
   }
@@ -10026,94 +9999,6 @@
                   <div class="gs-opt-meta"><strong>Pros.</strong> Addresses every named pain point. Migrations absorbed behind the layer. Reclaimed capacity available for AI, M&amp;A, and continuous change. Multi-year commercial structure aligns to the budget cycle. POC at no cost.</div>
                   <div class="gs-opt-meta"><strong>Cons.</strong> Subscription, implementation, governance gates (TPRM, ARB, SSO).</div>
                 </div>
-
-                <div style="margin-top: 28px;">
-                  <h4>Architecture comparison &mdash; <em>at a glance</em></h4>
-                  <p style="font-size: 13.5px; line-height: 1.6; color: #2E3A33; margin-bottom: 16px;">Three of these options keep the per-platform tax. One eliminates it. Same five GreenShield platforms appear at the bottom of every panel &mdash; what changes is what sits between the application and the platforms.</p>
-                  <div class="gs-arch-grid">
-                    <div class="gs-arch-panel gs-arch-a">
-                      <div class="gs-arch-h">Option A &mdash; Status quo</div>
-                      <div class="gs-arch-tag gs-arch-tag-warn">Same app. Five workflows.</div>
-                      <div class="gs-arch-app">One application <span>(Chrome update)</span></div>
-                      <svg class="gs-arch-svg" viewBox="0 0 280 80" preserveAspectRatio="none" aria-hidden="true">
-                        <line x1="140" y1="0" x2="28"  y2="80" stroke="#CC8800" stroke-width="1.4" stroke-dasharray="4 4"/>
-                        <line x1="140" y1="0" x2="84"  y2="80" stroke="#CC8800" stroke-width="1.4" stroke-dasharray="4 4"/>
-                        <line x1="140" y1="0" x2="140" y2="80" stroke="#CC8800" stroke-width="1.4" stroke-dasharray="4 4"/>
-                        <line x1="140" y1="0" x2="196" y2="80" stroke="#CC8800" stroke-width="1.4" stroke-dasharray="4 4"/>
-                        <line x1="140" y1="0" x2="252" y2="80" stroke="#CC8800" stroke-width="1.4" stroke-dasharray="4 4"/>
-                      </svg>
-                      <div class="gs-arch-plats">
-                        <span>SCCM</span><span>Intune</span><span>Citrix</span><span>AVD</span><span>Jamf</span>
-                      </div>
-                      <div class="gs-arch-cap">Every application packaged five times. No abstraction layer.</div>
-                    </div>
-
-                    <div class="gs-arch-panel gs-arch-b">
-                      <div class="gs-arch-h">Option B &mdash; Native-only stack</div>
-                      <div class="gs-arch-tag gs-arch-tag-warn">Migration bridge open.</div>
-                      <div class="gs-arch-app">One application <span>(Chrome update)</span></div>
-                      <svg class="gs-arch-svg" viewBox="0 0 280 80" preserveAspectRatio="none" aria-hidden="true">
-                        <line x1="140" y1="0" x2="28"  y2="80" stroke="#9AA29D" stroke-width="1.2" stroke-dasharray="3 5"/>
-                        <line x1="140" y1="0" x2="84"  y2="80" stroke="#00544E" stroke-width="1.6"/>
-                        <line x1="140" y1="0" x2="140" y2="80" stroke="#9AA29D" stroke-width="1.2" stroke-dasharray="3 5"/>
-                        <line x1="140" y1="0" x2="196" y2="80" stroke="#00544E" stroke-width="1.6"/>
-                        <line x1="140" y1="0" x2="252" y2="80" stroke="#00544E" stroke-width="1.6"/>
-                      </svg>
-                      <div class="gs-arch-plats">
-                        <span class="gs-arch-dim">SCCM</span><span>Intune</span><span class="gs-arch-dim">Citrix<small>&#9888; portal users</small></span><span>AVD</span><span>Jamf<small>&#9888; DMG / app-count</small></span>
-                      </div>
-                      <div class="gs-arch-cap">Solves three platforms. Leaves the migration bridge open.</div>
-                    </div>
-
-                    <div class="gs-arch-panel gs-arch-c">
-                      <div class="gs-arch-h">Option C &mdash; Add headcount</div>
-                      <div class="gs-arch-tag gs-arch-tag-warn">More hands. Same multiplier.</div>
-                      <div class="gs-arch-app">One application <span>(Chrome update)</span></div>
-                      <svg class="gs-arch-svg" viewBox="0 0 280 80" preserveAspectRatio="none" aria-hidden="true">
-                        <line x1="140" y1="0" x2="28"  y2="80" stroke="#CC8800" stroke-width="1.4" stroke-dasharray="4 4"/>
-                        <line x1="140" y1="0" x2="84"  y2="80" stroke="#CC8800" stroke-width="1.4" stroke-dasharray="4 4"/>
-                        <line x1="140" y1="0" x2="140" y2="80" stroke="#CC8800" stroke-width="1.4" stroke-dasharray="4 4"/>
-                        <line x1="140" y1="0" x2="196" y2="80" stroke="#CC8800" stroke-width="1.4" stroke-dasharray="4 4"/>
-                        <line x1="140" y1="0" x2="252" y2="80" stroke="#CC8800" stroke-width="1.4" stroke-dasharray="4 4"/>
-                        <g transform="translate(180, 24)">
-                          <rect x="0" y="0" width="80" height="30" rx="3" fill="#FFF7E6" stroke="#E8A340" stroke-width="1"/>
-                          <circle cx="14" cy="12" r="3" fill="#735112"/>
-                          <path d="M8 22 Q14 16 20 22" stroke="#735112" stroke-width="1.4" fill="none"/>
-                          <circle cx="28" cy="12" r="3" fill="#735112"/>
-                          <path d="M22 22 Q28 16 34 22" stroke="#735112" stroke-width="1.4" fill="none"/>
-                          <text x="44" y="18" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#735112">+1&ndash;2 eng</text>
-                        </g>
-                      </svg>
-                      <div class="gs-arch-plats">
-                        <span>SCCM</span><span>Intune</span><span>Citrix</span><span>AVD</span><span>Jamf</span>
-                      </div>
-                      <div class="gs-arch-cap">Architecture unchanged. The per-platform tax scales with the team.</div>
-                    </div>
-
-                    <div class="gs-arch-panel gs-arch-e">
-                      <div class="gs-arch-h">Option D &mdash; Application Workspace</div>
-                      <div class="gs-arch-tag gs-arch-tag-rec">Recommended</div>
-                      <div class="gs-arch-app">One application <span>(Chrome update)</span></div>
-                      <div class="gs-arch-layer">
-                        <strong>Application Workspace</strong>
-                        <small>Identity-aware delivery &middot; one definition, all five platforms</small>
-                      </div>
-                      <svg class="gs-arch-svg gs-arch-svg-short" viewBox="0 0 280 40" preserveAspectRatio="none" aria-hidden="true">
-                        <line x1="28"  y1="0" x2="28"  y2="40" stroke="#00544E" stroke-width="1.6"/>
-                        <line x1="84"  y1="0" x2="84"  y2="40" stroke="#00544E" stroke-width="1.6"/>
-                        <line x1="140" y1="0" x2="140" y2="40" stroke="#00544E" stroke-width="1.6"/>
-                        <line x1="196" y1="0" x2="196" y2="40" stroke="#00544E" stroke-width="1.6"/>
-                        <line x1="252" y1="0" x2="252" y2="40" stroke="#00544E" stroke-width="1.6"/>
-                      </svg>
-                      <div class="gs-arch-plats">
-                        <span>SCCM</span><span>Intune</span><span>Citrix</span><span>AVD</span><span>Jamf</span>
-                      </div>
-                      <div class="gs-arch-cap">One layer across the whole stack. The only option that solves the structural problem.</div>
-                    </div>
-                  </div>
-                  <div class="gs-arch-foot"><strong>Three of these options keep the per-platform tax. One eliminates it.</strong> Option C (add headcount) is omitted &mdash; it does not change the architecture, only who is doing the per-platform work.</div>
-                </div>
-
               </div>
             </div>
 
@@ -10123,7 +10008,6 @@
               <p class="gs-section-deck">Application Workspace becomes the abstraction above what we already run. Nothing currently in place is ripped out; the user experience stays stable while the back end changes underneath.</p>
               <div class="gs-prose">
                 <ul>
-                  <li><strong>The category distinction that matters.</strong> Most application delivery and packaging tools in the market are <em>environment-specific</em> &mdash; mature options exist for Mac, for Citrix &amp; VDI, for physical Windows, and for cloud-managed Intune. Each is good at its specific platform. Application Workspace is different in kind: it operates across all five GreenShield delivery systems as a single layer. The decision in front of leadership is not which point tool to add. It is whether to adopt the layer that makes the whole stack coherent.</li>
                   <li><strong>Single user experience</strong> for application access and delivery across all five GreenShield platforms.</li>
                   <li><strong>Existing environment stays.</strong> Connect through documented connectors. SCCM, Intune, Citrix, AVD, and Jamf continue to operate. Application Workspace becomes the abstraction layer above them.</li>
                   <li><strong>Decouple back-end change from user experience.</strong> The SCCM&rarr;Intune cutover and the Citrix&rarr;AVD exit happen behind the layer. Internal users and external Citrix portal users see the same workspace and the same icons through both transitions.</li>
